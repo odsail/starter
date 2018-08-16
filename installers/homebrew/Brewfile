@@ -11,7 +11,7 @@ tap "homebrew/dupes"
 tap "homebrew/headonly"
 tap "homebrew/php"
 tap "joeyhoer/extras"
-tap "justwatchcom/gopass"
+# tap "justwatchcom/gopass"
 
 # Cask dependencies
 brew "mas"
@@ -51,55 +51,55 @@ brew "pandoc"
 brew "reattach-to-user-namespace"
 brew "xmlstarlet"
 
-# Image tools
-brew "advancecomp"
-brew "apngasm"
-brew "joeyhoer/extras/apngdis"
-brew "joeyhoer/extras/crunchme"
-brew "joeyhoer/extras/cryopng"
-brew "joeyhoer/extras/cryozopflipng"
-brew "joeyhoer/extras/defluff"
-brew "ffmpeg", args: ["with-libvpx", "with-webp", "with-x265"]
-brew "joeyhoer/extras/flif", args: ["with-apng", "with-gif"]
-brew "joeyhoer/extras/gifify", args: ["HEAD"]
-brew "gifsicle"
-brew "joeyhoer/extras/gifv", args: ["HEAD"]
-brew "graphicsmagick"
-brew "guetzli"
-brew "icoutils"
-brew "imagemagick", args: ["with-fftw", "with-hdri", "with-liblqr", "with-librsvg", "with-opencl", "with-openmp", "with-webp"]
-brew "imageworsener"
-brew "jhead"
-brew "jpeg"
-brew "jpeg-archive"
-brew "jpegoptim"
-brew "joeyhoer/extras/jpegquality", args: ["HEAD"]
-brew "jpegrescan"
-brew "libbpg"
-brew "joeyhoer/extras/mediancut-posterizer"
-brew "mozjpeg"
-brew "joeyhoer/extras/nice-screenshot", args: ["HEAD"]
-brew "optipng"
-brew "perceptualdiff"
-brew "pngcheck"
-brew "pngcrush"
-brew "pngnq"
-brew "joeyhoer/extras/pngnq-s9"
-brew "joeyhoer/extras/pngout"
-brew "pngquant"
-brew "joeyhoer/extras/pngthermal"
-brew "joeyhoer/extras/pngwolf-zopfli", args: ["HEAD"]
-brew "joeyhoer/extras/video-poster", args: ["HEAD"]
-brew "webp"
+# # Image tools
+# brew "advancecomp"
+# brew "apngasm"
+# brew "joeyhoer/extras/apngdis"
+# brew "joeyhoer/extras/crunchme"
+# brew "joeyhoer/extras/cryopng"
+# brew "joeyhoer/extras/cryozopflipng"
+# brew "joeyhoer/extras/defluff"
+# brew "ffmpeg", args: ["with-libvpx", "with-webp", "with-x265"]
+# brew "joeyhoer/extras/flif", args: ["with-apng", "with-gif"]
+# brew "joeyhoer/extras/gifify", args: ["HEAD"]
+# brew "gifsicle"
+# brew "joeyhoer/extras/gifv", args: ["HEAD"]
+# brew "graphicsmagick"
+# brew "guetzli"
+# brew "icoutils"
+# brew "imagemagick", args: ["with-fftw", "with-hdri", "with-liblqr", "with-librsvg", "with-opencl", "with-openmp", "with-webp"]
+# brew "imageworsener"
+# brew "jhead"
+# brew "jpeg"
+# brew "jpeg-archive"
+# brew "jpegoptim"
+# brew "joeyhoer/extras/jpegquality", args: ["HEAD"]
+# brew "jpegrescan"
+# brew "libbpg"
+# brew "joeyhoer/extras/mediancut-posterizer"
+# brew "mozjpeg"
+# brew "joeyhoer/extras/nice-screenshot", args: ["HEAD"]
+# brew "optipng"
+# brew "perceptualdiff"
+# brew "pngcheck"
+# brew "pngcrush"
+# brew "pngnq"
+# brew "joeyhoer/extras/pngnq-s9"
+# brew "joeyhoer/extras/pngout"
+# brew "pngquant"
+# brew "joeyhoer/extras/pngthermal"
+# brew "joeyhoer/extras/pngwolf-zopfli", args: ["HEAD"]
+# brew "joeyhoer/extras/video-poster", args: ["HEAD"]
+# brew "webp"
 
 # Compression tools
 brew "brotli"
 brew "bzip2"
 brew "cabextract"
 brew "gzip"
-brew "joeyhoer/extras/gzthermal"
-brew "joeyhoer/extras/huffmix"
-brew "joeyhoer/extras/kzipmix"
+# brew "joeyhoer/extras/gzthermal"
+# brew "joeyhoer/extras/huffmix"
+# brew "joeyhoer/extras/kzipmix"
 brew "lbzip2"
 brew "lz4"
 brew "p7zip"
@@ -120,33 +120,33 @@ brew "tccutil" # Required for setting preferences
 brew "trash"
 brew "wifi-password"
 
-# Server stack
-# brew "httpd"
-brew "dnsmasq"
-brew "percona-server"
-brew "homebrew/php/php72", args: ["with-httpd"]
-brew "homebrew/php/php72-apcu"
-brew "homebrew/php/php72-opcache"
+# # Server stack
+# # brew "httpd"
+# brew "dnsmasq"
+# brew "percona-server"
+# brew "homebrew/php/php72", args: ["with-httpd"]
+# brew "homebrew/php/php72-apcu"
+# brew "homebrew/php/php72-opcache"
 
 # Programming languages
 # Installing Python/Ruby with Homebrew is unnecessary,
 # as they will be installed and managed via pyenv/rbenv respectively
-brew "go"
+# brew "go"
 brew "pyenv" # Python
-brew "ruby-build"
-brew "rbenv" # Ruby
-brew "node" # Also installs `npm`
-brew "yarn" # Faster than npm
+# brew "ruby-build"
+# brew "rbenv" # Ruby
+# brew "node" # Also installs `npm`
+# brew "yarn" # Faster than npm
 
 # Web tools
-brew "closure-compiler"
-brew "closure-stylesheets"
-brew "htmlcompressor", args: ["with-yuicompressor"]
-brew "lynx"
-brew "phantomjs"
-brew "slimerjs"
-brew "webkit2png"
-brew "yuicompressor"
+# brew "closure-compiler"
+# brew "closure-stylesheets"
+# brew "htmlcompressor", args: ["with-yuicompressor"]
+# brew "lynx"
+# brew "phantomjs"
+# brew "slimerjs"
+# brew "webkit2png"
+# brew "yuicompressor"
 
 # Network tools
 brew "tor"
@@ -156,37 +156,40 @@ brew "speedtest_cli"
 
 # Security tools
 brew "foremost"
-brew "justwatchcom/gopass/gopass"
+# brew "justwatchcom/gopass/gopass"
 brew "hashpump"
-brew "sqlmap"
+# brew "sqlmap"
 
 # Install GUI applications
+cask "1password"
 cask "adapter"
-cask "adobe-creative-cloud"
-cask "airdisplay"
-cask "airserver"
+# cask "adobe-creative-cloud"
+# cask "airdisplay"
+# cask "airserver"
 cask "atom"
-cask "bartender"
-cask "boom"
-cask "colors"
+# cask "bartender"
+# cask "boom"
+# cask "colors"
 cask "dropbox"
-cask "forklift"
-cask "imagealpha"
-cask "imageoptim"
-cask "iterm2-beta"
-cask "itsycal"
-cask "kaleidoscope"
+# cask "forklift"
+cask "google-chrome"
+# cask "imagealpha"
+# cask "imageoptim"
+cask "iterm2"
+# cask "itsycal"
+# cask "kaleidoscope"
 cask "osxfuse"
 cask "password-assistant"
 cask "rocket"
-cask "sequel-pro"
+# cask "sequel-pro"
 cask "slack"
 cask "sublime-text"
+cask "superduper"
 cask "the-unarchiver"
 cask "transmission"
-cask "vector-magic"
-cask "vlc"
-cask "wkhtmltopdf"
+# cask "vector-magic"
+# cask "vlc"
+# cask "wkhtmltopdf"
 
 # Browsers
 cask "safari-technology-preview"
@@ -236,12 +239,12 @@ cask "font-symbola"
 # MAS applications
 # Get a list of installed MAS apps with:
 # `brew bundle dump --file=- | egrep ^mas`
-mas "1Blocker", id: 1107421413
-mas "Byword", id: 420212497
+# mas "1Blocker", id: 1107421413
+# mas "Byword", id: 420212497
 mas "Divvy", id: 413857545
-mas "Kaleidoscope", id: 587512244
-mas "Marked 2", id: 890031187
-mas "xScope", id: 889428659
+# mas "Kaleidoscope", id: 587512244
+# mas "Marked 2", id: 890031187
+# mas "xScope", id: 889428659
 
 # Apple MAS applications
 mas "Keynote", id: 409183694

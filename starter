@@ -146,7 +146,7 @@ set_prefs dropbox "Dropbox"
 set_prefs google-chrome "Google Chrome"
 set_prefs qlcolorcode "Quick Look"
 set_prefs sublime-text "Sublime Text"
-set_prefs transmission "Transmission"
+# set_prefs transmission "Transmission"
 
 # Run
 get_open_affected_apps
