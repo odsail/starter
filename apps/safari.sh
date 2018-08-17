@@ -26,7 +26,7 @@ defaults write com.apple.Safari NewWindowBehavior -int 1
 defaults write com.apple.Safari HomePage -string 'about:blank'
 
 # Remove history items (in days)
-defaults write com.apple.Safari HistoryAgeInDaysLimit -int 31
+# defaults write com.apple.Safari HistoryAgeInDaysLimit -int 31
 
 # Save downloded files to
 defaults write com.apple.Safari DownloadsPath -string '~/Downloads'
@@ -61,13 +61,13 @@ defaults write com.apple.Safari TabCreationPolicy -int 2
 # defaults write com.apple.Safari AutoFillFromAddressBook -bool true
 
 # AutoFill user names and passwords
-# defaults write com.apple.Safari AutoFillPasswords -bool true
+defaults write com.apple.Safari AutoFillPasswords -bool true
 
 # AutoFill credit cards
 # defaults write com.apple.Safari AutoFillCreditCardData -bool true
 
 # AutoFill other forms
-# defaults write com.apple.Safari AutoFillMiscellaneousForms -bool true
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool true
 
 # Search
 ###############################################################################
@@ -94,7 +94,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 ###############################################################################
 
 # Warn when visiting a fraudulent website
-# defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
+defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
 
 # Enable JavaScript
 # defaults write com.apple.Safari WebKitJavaScriptEnabled -bool true

@@ -16,16 +16,16 @@ if [[ "$IS_LAPTOP" != "" ]]; then
 
     # Notebook: Battery
     sudo pmset -b         \
-        sleep         15  \
-        disksleep     10  \
-        displaysleep   5  \
+        sleep         45  \
+        disksleep     20  \
+        displaysleep   15  \
         halfdim        1
 
     # Notebook: Power Adapter
     sudo pmset -c         \
         sleep          0  \
         disksleep      0  \
-        displaysleep  30  \
+        displaysleep  60  \
         halfdim        1  \
         autorestart    1  \
         womp           1
@@ -48,5 +48,5 @@ sudo systemsetup -setcomputersleep off > /dev/null
 sudo systemsetup -setrestartfreeze on
 
 # Play iOS charging sound when power is connected
-defaults write com.apple.PowerChime ChimeOnAllHardware -bool true && \
-  open /System/Library/CoreServices/PowerChime.app &
+# defaults write com.apple.PowerChime ChimeOnAllHardware -bool true && \
+#   open /System/Library/CoreServices/PowerChime.app &

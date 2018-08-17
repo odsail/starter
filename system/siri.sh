@@ -5,7 +5,7 @@
 ###############################################################################
 
 # Enable Siri
-defaults write com.apple.assistant.support "Assistant Enabled" -bool true
+defaults write com.apple.assistant.support "Assistant Enabled" -bool false
 
 # Language
 defaults write com.apple.assistant.backedup "Session Language" -string "en-US"

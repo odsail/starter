@@ -11,7 +11,7 @@ defaults write com.apple.dock tilesize -int 46
 defaults write com.apple.dock size-immutable -bool true
 
 # Dock magnification
-defaults write com.apple.dock magnification -bool false
+defaults write com.apple.dock magnification -bool true
 
 # Icon size of magnified Dock items
 defaults write com.apple.dock largesize -int 64
@@ -23,7 +23,7 @@ defaults write com.apple.dock mineffect -string 'scale'
 defaults write NSGlobalDomain AppleWindowTabbingMode -string 'always'
 
 # Dock orientation: 'left', 'bottom', 'right'
-# defaults write com.apple.dock 'orientation' -string 'bottom'
+defaults write com.apple.dock 'orientation' -string 'bottom'
 
 # Dock pinning: 'start', 'middle', 'end'
 # defaults write com.apple.dock pinning -string 'middle'
@@ -41,7 +41,7 @@ defaults write NSGlobalDomain AppleActionOnDoubleClick -string "Maximize"
 defaults write com.apple.dock minimize-to-application -bool true
 
 # Animate opening applications
-defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.dock launchanim -bool true
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true

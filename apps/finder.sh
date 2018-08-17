@@ -23,16 +23,16 @@ chflags -h hidden "${HOME}/bin"
 defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Icons for hard drives, servers, and removable media on the desktop
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
-defaults write com.apple.finder ShowHardDrivesOnDesktop         -bool false
-defaults write com.apple.finder ShowMountedServersOnDesktop     -bool false
-defaults write com.apple.finder ShowRemovableMediaOnDesktop     -bool false
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop         -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop     -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop     -bool true
 
 # Visibility of hidden files
 #defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Status bar
 defaults write com.apple.finder ShowStatusBar -bool true

@@ -36,7 +36,7 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 #defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false
 
 # Close windows when quitting an application
-#defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+# defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 # Set number of recent items (Applications, Document, Servers)
 # PlistBuddy approach appears broken:
@@ -51,4 +51,4 @@ defaults write ~/Library/Preferences/ByHost/com.apple.coreservices.useractivityd
 defaults write ~/Library/Preferences/ByHost/com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool true
 
 # Disable Auto Save, Versions and Resume
-# defaults write -g ApplePersistence -bool false
+defaults write -g ApplePersistence -bool true
