@@ -24,6 +24,7 @@ pip_packages=(
   qtfaststart
   dnsyo
   powerline-status
+  mkdocs-bootswatch
 )
 
 # Loop through each package individally because

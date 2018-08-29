@@ -35,6 +35,8 @@ brew "ssh-copy-id"
 brew "tmux"
 brew "tree"
 brew "wget"
+brew "mkdocs"
+
 
 # Compression tools
 brew "gzip"
