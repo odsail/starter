@@ -23,11 +23,11 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 # Allow signed apps
 sudo defaults write /Library/Preferences/com.apple.alf allowsignedenabled -bool true
 
-# Firewall logging
-sudo defaults write /Library/Preferences/com.apple.alf loggingenabled -bool false
+# Firewall logging - original true
+$ sudo defaults write /Library/Preferences/com.apple.alf loggingenabled -bool true
 
 # Stealth mode
-sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -bool true
+# sudo defaults write /Library/Preferences/com.apple.alf stealthenabled -bool true
 
 # Disable Infared Remote
 sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
@@ -56,7 +56,7 @@ fi
 # the `tccutil` package installed via Homebrew.
 # Note: SIP must be disabled to modify the database.
 #
-# The below outlines an altenrative solution for configuring privacy.
+# The below outlines an alternative solution for configuring privacy.
 ###############################################################################
 
 # Databases located at:

@@ -76,42 +76,42 @@ function prompt_restart {
 
 # System Prefrences
 system_preferences=(
-  general
-  desktop-screen-saver
-  dock
+  # general
+  # desktop-screen-saver
+  # dock
   mission-control
-  language-region
-  security-privacy
+  # language-region
+  # security-privacy
   spotlight
-  notifications
+  # notifications
 
-  displays
-  energy-saver
-  keyboard
+  # displays
+  # energy-saver
+  # keyboard
   # mouse
-  trackpad
-  printers-scanners
-  sound
+  # trackpad
+  # printers-scanners
+  # sound
   # startup-disk
 
-  icloud
+  # icloud
   # internet-accounts
-  extensions
-  app-store
+  # extensions
+  # app-store
   # network
-  bluetooth
-  sharing
+  # bluetooth
+  # sharing
 
-  users-groups
+  # users-groups
   # parental-controls
-  siri
-  date-time
-  time-machine
-  accessibility
+  # siri
+  # date-time
+  # time-machine
+  # accessibility
 
-  other
-  dashboard
-  cds-dvds
+  # other
+  # dashboard
+  # cds-dvds
   # ssd
 )
 
@@ -124,28 +124,28 @@ for pane in "cfprefsd" "SystemUIServer" "Dock" "SpeechSynthesisServer"; do
 done
 
 # Default Apps
-set_prefs activity-monitor "Activity Monitor"
-set_prefs app-store "App Store"
+# set_prefs activity-monitor "Activity Monitor"
+# set_prefs app-store "App Store"
 # set_prefs calendar "Calendar"
-set_prefs contacts "Contacts"
-set_prefs disk-utility "Disk Utility"
-set_prefs finder "Finder"
-set_prefs font-book "Font Book"
-set_prefs iwork "Keynote" "Numbers" "Pages"
-set_prefs mail "Mail"
-set_prefs messages "Messages"
-set_prefs quicktime "QuickTime Player"
-set_prefs safari "Safari" "WebKit"
-set_prefs terminal # Do not kill "Terminal" - it will stop script execution
-set_prefs textedit "TextEdit"
+# set_prefs contacts "Contacts"
+# set_prefs disk-utility "Disk Utility"
+# set_prefs finder "Finder"
+# set_prefs font-book "Font Book"
+# set_prefs iwork "Keynote" "Numbers" "Pages"
+# set_prefs mail "Mail"
+# set_prefs messages "Messages"
+# set_prefs quicktime "QuickTime Player"
+# set_prefs safari "Safari" "WebKit"
+# set_prefs terminal # Do not kill "Terminal" - it will stop script execution
+# set_prefs textedit "TextEdit"
 
 # Third Party Apps
-set_prefs adobe
-set_prefs divvy "Divvy"
-set_prefs dropbox "Dropbox"
-set_prefs google-chrome "Google Chrome"
-set_prefs qlcolorcode "Quick Look"
-set_prefs sublime-text "Sublime Text"
+# set_prefs adobe
+# set_prefs divvy "Divvy"
+# set_prefs dropbox "Dropbox"
+# set_prefs google-chrome "Google Chrome"
+# set_prefs qlcolorcode "Quick Look"
+# set_prefs sublime-text "Sublime Text"
 # set_prefs transmission "Transmission"
 
 # Run
