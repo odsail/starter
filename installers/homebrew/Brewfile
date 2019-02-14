@@ -210,6 +210,7 @@ cask "docker"
 # Developer IDE's
 cask visual-studio-code
 cask atom
+# cask sublime-text
 
 # Preference Panes
 # cask "hosts"
