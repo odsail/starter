@@ -20,10 +20,8 @@ hash pip 2>/dev/null || echo "Please install pip before continuing"
 
 pip_packages=(
   pip
-  fonttools
-  qtfaststart
   dnsyo
-  powerline-status
+  # powerline-status
 )
 
 # Loop through each package individally because

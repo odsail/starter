@@ -11,24 +11,23 @@ tap "homebrew/headonly"
 
 # Cask dependencies
 brew "mas"
-cask "java"
-cask "xquartz"
 
 # Shells
 # Note: Don't forget to add shells to `/etc/shells` before running `chsh`.
 brew "bash"
 brew "zsh"
+brew "antigen"
 
 # CLI utilities
 # Note: This replaces some (outdated) built-in macOS utilities with the GNU equivalents
 # Don't forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew "coreutils"
 brew "curl", args: ["with-nghttp2"]
+brew "findutils" # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 brew "git"
 brew "grep"
 brew "pv"
 brew "pwgen"
-brew "ripgrep"
 brew "rsync"
 brew "screen"
 brew "ssh-copy-id"
@@ -36,18 +35,22 @@ brew "tmux"
 brew "tree"
 brew "wget"
 
+# Other useful tools
+brew "highlight"
+
 # Compression tools
 brew "gzip"
+brew "snappy"
+
+# Mac OS tools
+brew "duti" # Required for setting preferences
+brew "tccutil" # Required for setting preferences
 
 # Programming languages
 # Installing Python/Ruby with Homebrew is unnecessary,
 # as they will be installed and managed via pyenv/rbenv respectively
+brew "go"
 brew "pyenv" # Python
-
-# Network tools
-brew "tor"
-brew "nmap"
-brew "speedtest_cli"
 
 # Install GUI applications
 cask "1password"
@@ -67,36 +70,33 @@ cask "osxfuse"
 cask "protonmail-bridge"
 cask "protonvpn"
 cask "protonmail-unofficial"
-cask "slack"
 cask "superduper"
 cask "tunnelblick"
 cask "the-unarchiver"
-cask "visual-studio-code"
-cask "workflowy"
-
 
 # Browsers
-cask "google-chrome"
-cask "firefox"
-
+cask "brave-browser"
 
 # Virtulization applications
-cask "virtualbox"
 cask "vagrant"
 cask "vagrant-manager"
+cask "docker"
 
-# Services
-cask "markdown-service-tools"
+# Developer IDE's
+cask visual-studio-code
+cask atom
 
+# QuickLook plugins
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "qlstephen"
+cask "webpquicklook"
 
-
-# MAS applications
-# Get a list of installed MAS apps with:
-# `brew bundle dump --file=- | egrep ^mas`
-
+# Color Picker plugins
+cask "colorpicker-skalacolor"
 
 # Apple MAS applications
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
+# mas "Keynote", id: 409183694
+# mas "Numbers", id: 409203825
+# mas "Pages", id: 409201541
+# mas "Xcode", id: 497799835

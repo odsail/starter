@@ -15,5 +15,5 @@ mkdir -p ~/.antigen
 mkdir -p ~/.antigen/themes
 
 # Download Antigen
-curl -L git.io/antigen-nightly > ~/.antigen/antigen.zsh
+curl -L git.io/antigen > ~/.antigen/antigen.zsh
 source ~/.antigen/antigen.zsh

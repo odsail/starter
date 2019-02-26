@@ -17,7 +17,7 @@ defaults write NSGlobalDomain AppleSpacesSwitchOnActivate -bool true
 # (i.e. use the old Exposé behavior instead)
 defaults write com.apple.dock expose-group-by-app -bool false
 
-# Displays have seperate Spaces
+# Displays have separate Spaces
 defaults write com.apple.spaces spans-displays -bool false
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
@@ -28,8 +28,8 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 
 # Add iOS Simulator to Launchpad
 # if [ -e "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" ]; then
-#     sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" \
-#                 "/Applications/Simulator.app"
+#    sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" \
+#                "/Applications/Simulator.app"
 # fi
 
 # Hot corners
@@ -43,9 +43,9 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 # 10 : Put display to sleep
 # 11 : Launchpad
 # 12 : Notification Center
-# Top left screen corner
-defaults write com.apple.dock wvous-tl-corner   -int 0
-defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top left screen corner - screen saver
+defaults write com.apple.dock wvous-tl-corner   -int 5
+defaults write com.apple.dock wvous-tl-modifier -int 5
 # Top right screen corner
 defaults write com.apple.dock wvous-tr-corner   -int 0
 defaults write com.apple.dock wvous-tr-modifier -int 0
