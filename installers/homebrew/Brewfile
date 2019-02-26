@@ -22,6 +22,7 @@ brew "mas"
 # Note: Don't forget to add shells to `/etc/shells` before running `chsh`.
 brew "bash"
 brew "zsh"
+brew "antigen"
 
 # CLI utilities
 # Note: This replaces some (outdated) built-in macOS utilities with the GNU equivalents
@@ -220,7 +221,7 @@ cask atom
 # cask "ios-saver"
 
 # Services
-# cask "markdown-service-tool"
+# cask "markdown-service-tools"
 
 # QuickLook plugins
 cask "qlcolorcode"
