@@ -49,8 +49,8 @@ brew "tccutil" # Required for setting preferences
 # Programming languages
 # Installing Python/Ruby with Homebrew is unnecessary,
 # as they will be installed and managed via pyenv/rbenv respectively
-brew "go"
-brew "pyenv" # Python
+# brew "go"
+# brew "pyenv" # Python
 
 # Install GUI applications
 cask "1password"
@@ -83,8 +83,8 @@ cask "vagrant-manager"
 cask "docker"
 
 # Developer IDE's
-cask visual-studio-code
-cask atom
+cask "visual-studio-code"
+cask "atom"
 
 # QuickLook plugins
 cask "qlcolorcode"
@@ -96,7 +96,7 @@ cask "webpquicklook"
 cask "colorpicker-skalacolor"
 
 # Apple MAS applications
-# mas "Keynote", id: 409183694
-# mas "Numbers", id: 409203825
-# mas "Pages", id: 409201541
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 # mas "Xcode", id: 497799835
