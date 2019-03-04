@@ -7,7 +7,7 @@ tap "caskroom/fonts"
 tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
-tap "homebrew/headonly"
+# tap "homebrew/headonly"
 
 # Cask dependencies
 brew "mas"
@@ -22,7 +22,7 @@ brew "antigen"
 # Note: This replaces some (outdated) built-in macOS utilities with the GNU equivalents
 # Don't forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew "coreutils"
-brew "curl", args: ["with-nghttp2"]
+# brew "curl", args: ["with-nghttp2"]
 brew "findutils" # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 brew "git"
 brew "grep"
